@@ -1,15 +1,15 @@
 {
     "homepage": "https://www.python.org/",
     "license": "Python-2.0",
-    "version": "3.8.6rc1",
+    "version": "3.9.1rc1",
     "architecture": {
         "64bit": {
-            "url": "https://www.python.org/ftp/python/3.8.6/python-3.8.6rc1-amd64.exe#/py3.exe",
-            "hash": "md5:35a2d2ba3f43f896744f6da6a2f0881d"
+            "url": "https://www.python.org/ftp/python/3.9.1/python-3.9.1rc1-amd64.exe#/py3.exe",
+            "hash": "md5:7444c283d8a94823beb52611c091a398"
         },
         "32bit": {
-            "url": "https://www.python.org/ftp/python/3.8.6/python-3.8.6rc1.exe#/py3.exe",
-            "hash": "md5:84175f3e4c38555b770857b34b88f736"
+            "url": "https://www.python.org/ftp/python/3.9.1/python-3.9.1rc1.exe#/py3.exe",
+            "hash": "md5:db66fab666fe331eae12949364b72350"
         }
     },
     "installer": {
@@ -47,7 +47,7 @@
     "env_add_path": "scripts",
     "checkver": {
         "url": "https://www.python.org/downloads/windows/",
-        "re": "python-(3[\\d.]+rc{1,2}[\\d]+)-"
+        "regex": "(?sm)Pre-releases.*?python-(3\\.9\\.\\d+rc{1,2}[\\d]+)-"
     },
     "autoupdate": {
         "architecture": {
